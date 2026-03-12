@@ -1,0 +1,6 @@
+version: "3.9"
+
+services:
+  stresstest:
+    build: .
+    command: ["./stresstest", "stress", "-u", "https://httpbin.org/get", "-r", "3500", "-c", "200"]
